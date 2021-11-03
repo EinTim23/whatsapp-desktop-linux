@@ -1,0 +1,24 @@
+{
+  "name": "whatsapp-desktop-linux",
+  "version": "1.0.0",
+  "description": "WhatsApp Desktop app for linux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "EinTim",
+  "license": "GPL",
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1"
+  },
+  "build": {
+    "appId": "whatsapp.desktop",
+    "mac": {
+      "category": "communication"
+    }
+  }
+}
